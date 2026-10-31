@@ -12,8 +12,8 @@ These live in [`skills/`](skills/). They were written after studying the three c
 
 | Skill | What it does | Starts when | Inspired by | Status |
 |---|---|---|---|---|
-| [handoff](skills/handoff/SKILL.md) | Saves the current state to `HANDOFF.md` in the repo so any AI, on any device, can continue | "handoff", ending a session, usage running out | Matt Pocock's `handoff` (redact secrets, point to artifacts, suggest skills). Mine saves in the repo instead of a temp folder, so Codex and my phone can read it | 🟢 draft |
-| [resume](skills/resume/SKILL.md) | Reads the handoff + auto git snapshot and says in 3 lines where things stand | "resume", starting a new chat on old work | pstack's `recall` and session-pickup playbook | 🟢 draft |
+| [checkpoint](skills/checkpoint/SKILL.md) | Saves where the work stands: `HANDOFF.md` in the repo, a local private folder for code with no repo, or a Notion page for non-code tasks | "checkpoint", ending a session, usage running out | Matt Pocock's `handoff` (redact secrets, point to artifacts, suggest skills). Mine saves where Codex and my phone can read it, and is named differently to avoid clashing with his | 🟢 draft |
+| [resume](skills/resume/SKILL.md) | Reads the checkpoint + auto git snapshot and says in 3 lines where things stand | "resume", starting a new chat on old work | pstack's `recall` and session-pickup playbook | 🟢 draft |
 | [low-usage](skills/low-usage/SKILL.md) | When usage is low, guides me to do easy steps myself instead of spending tokens | "low", "usage is low" | Nothing similar exists | 🟢 draft |
 | [brain-dump](skills/brain-dump/SKILL.md) | Takes a messy worried brain dump, sorts it, picks one next step | "brain dump", "I'm overwhelmed" | Matt Pocock's `grilling` (one recommendation per question) | 🟢 draft |
 | [plan-today](skills/plan-today/SKILL.md) | Builds today's plan from my Notion Inbox | "plan today", morning | pstack's `ketchup` (decisions listed with a pick) | 🟢 draft |
@@ -61,7 +61,7 @@ All three collections are **MIT licensed**. I install them from the source inste
 | `diagnosing-bugs` | Step-by-step loop for hard bugs | Debugging without guessing | 🟢 |
 | `improve-codebase-architecture` | Scans for weak structure, shows a visual report | Is my architecture OK for the future? | 🟡 |
 | `prototype` | Throwaway prototype to test an idea cheaply | Deciding UI or logic | 🟡 |
-| `handoff` | Handoff doc saved to a temp folder | Replaced by my own `handoff` (repo-based, cross-tool) | ⚪ |
+| `handoff` | Handoff doc saved to a temp folder | Replaced by my own `checkpoint` (saved where every tool can read it) | ⚪ |
 | `code-review` | Review against standards + spec | Needs an issue tracker set up; Addy's review fits better now | ⚪ |
 | `wait-what` | Re-pitch the last message | Needs a GLOSSARY.md; pstack `bro` does this | ⚪ |
 | `tdd` | Test-first development | Overlaps with others; add later | 🟡 |

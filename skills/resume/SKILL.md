@@ -1,14 +1,15 @@
 ---
 name: resume
-description: Pick up earlier work from HANDOFF.md and the auto git snapshot. Use for "resume", "where were we", or starting a new chat on unfinished work.
+description: Pick up earlier work from its checkpoint and the auto git snapshot. Use for "resume", "where were we", or starting a new chat on unfinished work.
 ---
 
 Rebuild context cheaply, then hand the user a three-line brief.
 
-1. Read `HANDOFF.md` at the repo root.
-2. Read `.ai/auto-snapshot.md` if it exists (a script writes it after each session: branch, recent commits, changed files).
-3. Run `git status --short` and `git log --oneline -5`. Trust git over the handoff when they disagree, and say so.
-4. Read only the files the "In progress" and "Next step" sections name.
+1. Find the checkpoint the **checkpoint** skill wrote:
+   - in a git repo → `HANDOFF.md` at the repo root, plus `.ai/auto-snapshot.md` if it exists (a script writes it after each session);
+   - otherwise → ask which task, then look in `D:\work\<task-name>\HANDOFF.md` or the matching sub-page under the Handoffs page named in the user's personal rules.
+2. In a repo, run `git status --short` and `git log --oneline -5`. Trust git over the checkpoint when they disagree, and say so.
+3. Read only the files or pages the "In progress" and "Next step" sections name.
 
 Reply with exactly three lines:
 - **Where we are:** …

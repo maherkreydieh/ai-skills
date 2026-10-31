@@ -10,25 +10,25 @@ They stand on the shoulders of three collections I use every day: [pstack](https
 
 | Skill | Use it when |
 |---|---|
-| [handoff](skills/handoff/SKILL.md) | you're stopping, switching tools, or running out of usage |
+| [checkpoint](skills/checkpoint/SKILL.md) | you're stopping, switching tools, or running out of usage |
 | [resume](skills/resume/SKILL.md) | you're picking up earlier work in a new chat |
 | [low-usage](skills/low-usage/SKILL.md) | your usage limit is close and you want to save tokens |
 | [brain-dump](skills/brain-dump/SKILL.md) | your head is full and you need one next step |
 | [plan-today](skills/plan-today/SKILL.md) | you want today's plan from your Notion Inbox |
 
-`handoff` and `resume` work together across Claude Code, Codex, and your phone, because the handoff lives in the repo, not in a chat.
+`checkpoint` and `resume` work together across Claude Code, Codex, and your phone, because the checkpoint lives in the repo (or a Notion page for non-code tasks), not in a chat.
 
 ## Install
 
 **Claude Code:** copy a skill folder into `~/.claude/skills/`, for example:
 
 ```bash
-cp -r skills/handoff ~/.claude/skills/
+cp -r skills/checkpoint ~/.claude/skills/
 ```
 
 **Codex:** copy it into `~/.codex/skills/`.
 
-Type `/handoff` (Claude Code) or `$handoff` (Codex), or just say "handoff". The agent picks a skill up from its description.
+Type `/checkpoint` (Claude Code) or `$checkpoint` (Codex), or just say "checkpoint". The agent picks a skill up from its description.
 
 ## Optional: zero-token snapshot
 
