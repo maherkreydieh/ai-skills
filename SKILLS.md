@@ -26,7 +26,7 @@ Dropped from my original list because a borrowed skill already does the job:
 
 ## B. Skills I use from others
 
-All three collections are **MIT licensed**. I install them from the source instead of copying, so I get their updates.
+All three collections are **MIT licensed**. pstack is installed as a plugin. From Matt and Addy I copy only the skills I use (🟢), each with its license and a SOURCE.md crediting the author, and refresh them monthly.
 
 ### Lauren Tan (poteto) — pstack
 **Repo:** [cursor/plugins/pstack](https://github.com/cursor/plugins/tree/main/pstack) · **License:** MIT · **61 skills** · Built for Cursor, with a Claude Code adapter.
@@ -52,7 +52,7 @@ All three collections are **MIT licensed**. I install them from the source inste
 
 ### Matt Pocock — Skills For Real Engineers
 **Repo:** [mattpocock/skills](https://github.com/mattpocock/skills) · **License:** MIT · **39 skills** · Works with Claude Code **and Codex**.
-**Install:** Claude Code `claude plugin install mattpocock-skills@claude-plugins-official` · Codex `codex plugin marketplace add mattpocock/skills` then `codex plugin add mattpocock-skills@mattpocock`
+**How I install:** copy `grilling`, `grill-me`, `diagnosing-bugs`, `writing-for-agents` into `~/.claude/skills/` and `~/.codex/skills/`. To try his full set instead: `codex plugin marketplace add mattpocock/skills` then `codex plugin add mattpocock-skills@mattpocock`.
 
 | Skill | What it does | Why I use it | Status |
 |---|---|---|---|
@@ -68,7 +68,7 @@ All three collections are **MIT licensed**. I install them from the source inste
 
 ### Addy Osmani — Agent Skills
 **Repo:** [addyosmani/agent-skills](https://github.com/addyosmani/agent-skills) · **License:** MIT · **25 skills** · Long, detailed skills (200–400 lines each), so they cost more tokens when they run.
-**Install (Claude Code):** `/plugin marketplace add addyosmani/agent-skills` then `/plugin install agent-skills@addy-agent-skills`
+**How I install:** copy `code-review-and-quality` (with its two checklists) and `security-and-hardening` into `~/.claude/skills/` and `~/.codex/skills/`. To try his full set instead: `/plugin marketplace add addyosmani/agent-skills` then `/plugin install agent-skills@addy-agent-skills`.
 
 | Skill | What it does | Why I use it | Status |
 |---|---|---|---|
@@ -83,7 +83,8 @@ All three collections are **MIT licensed**. I install them from the source inste
 
 ## Keeping it lean
 
-Every installed skill's description loads into every chat. To keep cost low:
-- Install the three plugins, then switch off the ⚪ and 🟡 skills (Claude Code setting `skillOverrides`).
-- Turn a 🟡 skill on only when I need it.
-- Review this catalog monthly.
+Every installed skill's description loads into every chat, so I install only what I use.
+- Claude Code's `skillOverrides` setting does **not** switch off skills from plugins you install yourself (checked on v2.1.309), so for Matt's and Addy's collections I copy just the skills I want instead.
+- pstack stays a plugin: most of its skills are type-only by design, so they cost almost nothing until used.
+- To use a 🟡 skill, copy it in when I need it.
+- Review this catalog monthly and refresh the copied skills from their source.
