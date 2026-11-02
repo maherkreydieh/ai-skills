@@ -16,6 +16,7 @@ They stand on the shoulders of three collections I use every day: [pstack](https
 | [brain-dump](skills/brain-dump/SKILL.md) | your head is full and you need one next step |
 | [plan-today](skills/plan-today/SKILL.md) | you want today's plan from your Notion Inbox |
 | [night-shift](skills/night-shift/SKILL.md) | you're going to sleep or to work and want Claude + Codex to keep working, with a report on your phone |
+| [watch-reel](skills/watch-reel/SKILL.md) | you want the AI to watch a reel or short and tell you what it says |
 
 `checkpoint` and `resume` work together across Claude Code, Codex, and your phone, because the checkpoint lives in the repo (or a Notion page for non-code tasks), not in a chat.
 
