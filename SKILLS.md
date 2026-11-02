@@ -17,6 +17,7 @@ These live in [`skills/`](skills/). They were written after studying the three c
 | [low-usage](skills/low-usage/SKILL.md) | When usage is low, guides me to do easy steps myself instead of spending tokens | "low", "usage is low" | Nothing similar exists | 🟢 draft |
 | [brain-dump](skills/brain-dump/SKILL.md) | Takes a messy worried brain dump, sorts it, picks one next step | "brain dump", "I'm overwhelmed" | Matt Pocock's `grilling` (one recommendation per question) | 🟢 draft |
 | [plan-today](skills/plan-today/SKILL.md) | Builds today's plan from my Notion Inbox | "plan today", morning | pstack's `ketchup` (decisions listed with a pick) | 🟢 draft |
+| [night-shift](skills/night-shift/SKILL.md) | Unattended work shift with Codex while I sleep or work: 2-minute grill, contract, Claude/Codex split by limits, review loop, reports on Notion | "night shift", "going to sleep", "going to work", "I'm back" | Matt Pocock's `grilling` + `writing-for-agents`; Addy's `code-review-and-quality` for the review loop | 🟡 tested once |
 
 Dropped from my original list because a borrowed skill already does the job:
 - *explain-review* → covered by pstack `blast-radius` + `bro`
